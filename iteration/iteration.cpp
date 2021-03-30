@@ -13,8 +13,11 @@ using namespace std;
 int main()
 {
 
+unsigned long long int a;
+
+ofstream fout;
+
 /*-----------------------------------------/VECTOR/-------------------------------------------*/
-	ofstream fout;
 
 	fout.open("iteration_vec.txt");
 
@@ -30,9 +33,9 @@ int main()
 		
 		auto begin = chrono::high_resolution_clock::now();
 	
-		for (int i = 0; i < 100; i++)
+		for (int i = 0; i < size; i++)
 		{
-			unsigned long long int a = vec[i];
+			a = vec[i]++;
 		}
 		
 		auto end = chrono::high_resolution_clock::now();
@@ -45,7 +48,7 @@ int main()
 
 /*---------------------------------------/FORWARD_LIST/----------------------------------------*/
 
-	fout.open("iteration_forwlist.txt");
+	/*fout.open("iteration_forwlist.txt");
 
 	for (unsigned long long int size = 10000; size <= 10000000; size += 10000)
 	{
@@ -71,11 +74,11 @@ int main()
 		fout << endl;
 	}
 	
-	fout.close();
+	fout.close();/*
 	
 /*-------------------------------------------/LIST/---------------------------------------------*/
 
-	fout.open("iteration_list.txt");
+	/*fout.open("iteration_list.txt");
 
 	for (unsigned long long int size = 10000; size <= 10000000; size += 10000)
 	{
@@ -101,11 +104,11 @@ int main()
 		fout << endl;
 	}
 	
-	fout.close();
+	fout.close();*/
 
 /*-------------------------------------------/MAP/---------------------------------------------*/
 
-	fout.open("iteration_map.txt");
+	/*fout.open("iteration_map.txt");
 
 	for (unsigned long long int size = 10000; size <= 10000000; size += 10000)
 	{
@@ -130,11 +133,11 @@ int main()
 		fout << endl;
 	}
 	
-	fout.close();
+	fout.close();*/
 	
 /*--------------------------------------------/SET/--------------------------------------------*/
 
-	fout.open("iteration_set.txt");
+	/*fout.open("iteration_set.txt");
 
 	for (unsigned long long int size = 10000; size <= 10000000; size += 10000)
 	{
@@ -142,24 +145,24 @@ int main()
 
 		for (unsigned long long int i = 0; i < size; i++)
 		{
-			Set.insert(0);
+			Set.insert(i);
 		}
-	
-		auto begin = chrono::high_resolution_clock::now();
 		
+		auto begin = chrono::high_resolution_clock::now();
+			
 		for (set<unsigned long long int>::iterator it = Set.begin(); it != Set.end(); ++it)
 		{
-			(*it);
+			a = (*it);
 		}
-
+	
 		auto end = chrono::high_resolution_clock::now();
-
+		
 		fout << chrono::duration_cast<chrono::nanoseconds>(end-begin).count() << endl;
 			
 		fout << endl;
 	}
 	
-	fout.close();
+	fout.close();*/
 	
 	
 /*--------------------------------------------------------------------------------------------*/
