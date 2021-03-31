@@ -64,7 +64,7 @@ ofstream fout;
 	
 		for (forward_list<unsigned long long int>::iterator it = flist.begin(); it != flist.end(); ++it)
 		{
-			(*it) ++;
+			a = (*it);
 		}
 
 		auto end = chrono::high_resolution_clock::now();
@@ -94,7 +94,7 @@ ofstream fout;
 		
 		for (list<unsigned long long int>::iterator it = llist.begin(); it != llist.end(); ++it)
 		{
-			(*it) ++;
+			a = (*it);
 		}
 
 		auto end = chrono::high_resolution_clock::now();
@@ -123,7 +123,7 @@ ofstream fout;
 		
 		for (map<unsigned long long int, unsigned long long int>::iterator it = Map.begin(); it != Map.end(); ++it)
 		{
-			(it->second) ++;
+			a = (it->second);
 		}
 
 		auto end = chrono::high_resolution_clock::now();
