@@ -48,7 +48,7 @@ ofstream fout;
 
 /*---------------------------------------/FORWARD_LIST/----------------------------------------*/
 
-	/*fout.open("iteration_forwlist.txt");
+	fout.open("iteration_forwlist.txt");
 
 	for (unsigned long long int size = 10000; size <= 10000000; size += 10000)
 	{
@@ -74,11 +74,11 @@ ofstream fout;
 		fout << endl;
 	}
 	
-	fout.close();/*
+	fout.close();
 	
 /*-------------------------------------------/LIST/---------------------------------------------*/
 
-	/*fout.open("iteration_list.txt");
+	fout.open("iteration_list.txt");
 
 	for (unsigned long long int size = 10000; size <= 10000000; size += 10000)
 	{
@@ -104,11 +104,11 @@ ofstream fout;
 		fout << endl;
 	}
 	
-	fout.close();*/
+	fout.close();
 
 /*-------------------------------------------/MAP/---------------------------------------------*/
 
-	/*fout.open("iteration_map.txt");
+	fout.open("iteration_map.txt");
 
 	for (unsigned long long int size = 10000; size <= 10000000; size += 10000)
 	{
@@ -133,11 +133,11 @@ ofstream fout;
 		fout << endl;
 	}
 	
-	fout.close();*/
+	fout.close();
 	
 /*--------------------------------------------/SET/--------------------------------------------*/
 
-	/*fout.open("iteration_set.txt");
+	fout.open("iteration_set.txt");
 
 	for (unsigned long long int size = 10000; size <= 10000000; size += 10000)
 	{
@@ -162,7 +162,7 @@ ofstream fout;
 		fout << endl;
 	}
 	
-	fout.close();*/
+	fout.close();
 	
 	
 /*--------------------------------------------------------------------------------------------*/
